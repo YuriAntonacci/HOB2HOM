@@ -17,9 +17,9 @@ This repository implements a predictability-based approach to address this issue
 
 The difference between the predictive power of these two models defines **structural synergy**:
 
-[
+$$
 S_s = R_A^* - R^*
-]
+$$
 
 where (R_A^*) is the residual variance of the best additive model and (R^*) is the residual variance of the full model. A positive value of (S_s) indicates that the target contains a non-additive predictive component that cannot be reproduced by separate source-specific effects.
 
