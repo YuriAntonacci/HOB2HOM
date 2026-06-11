@@ -33,7 +33,7 @@ HOB2HOM/
 ├── functions/
 │   ├── int_pred.m
 │   ├── struct_syn.m
-│   └── bluewhitered.m
+│   
 │
 ├── scripts/
 │   ├── script_theoretical_trends.m
@@ -44,7 +44,6 @@ HOB2HOM/
 ├── data/
 │   └── climate_data.mat
 │
-├── figures/
 │
 └── README.md
 ```
