@@ -97,41 +97,19 @@ Outputs:
 
 The function compares the residual variance of the additive model with that of the full model including polynomial interaction terms.
 
-## Statistical assessment
-
-The repository includes surrogate-based procedures for two related tests:
-
-1. **Significance of structural synergy**
-   Interaction terms are randomly shuffled while additive source terms are kept unchanged. This tests the null hypothesis that interaction terms do not provide an additional non-additive predictive contribution, i.e. (S_s = 0).
-
-2. **Significance of increasing the polynomial order**
-   Polynomial terms introduced at order (p), but absent from order (p-1), are randomly shuffled while lower-order terms are kept unchanged. This tests whether moving from order (p-1) to order (p) significantly improves the description of the interaction structure.
-
-A percentile-based threshold is used:
-
-[
-\text{threshold} = 100(1-\alpha)\text{-th percentile}
-]
-
-and the original (S_s) value is considered significant if it exceeds this threshold.
-
 ## Example 1: theoretical trends
 
 The script `script_theoretical_trends.m` reproduces the theoretical trends of (\Delta), (\Delta_A), and (S_s) for:
 
 1. a linear Gaussian system,
 
-[
-Y = aX_1 + bX_2 + U
-]
+$$ Y = aX_1 + bX_2 + U $$
 
-2. a non-linear multiplicative system,
+2. a non-linear system,
 
-[
-Y = cX_1X_2 + U
-]
+$$ Y = cX_1X_2 + U $$
 
-In the linear Gaussian system, (\Delta) may be positive or negative depending on source correlation, but (S_s = 0), because the optimal predictor is additive. In the non-linear multiplicative system, (S_s > 0) for (c \neq 0) and (|r_{12}| < 1), indicating a genuine non-additive predictive component.
+In the linear Gaussian system, $$\Delta$$ may be positive or negative depending on source correlation, but (S_s = 0), because the optimal predictor is additive. In the non-linear multiplicative system, $$ S_s > 0 $$ for $$c \neq 0$$ and $$|r_{12}| < 1$$, indicating a genuine non-additive predictive component.
 
 ## Example 2: finite-sample estimation
 
@@ -158,29 +136,23 @@ This allows one to verify whether the polynomial-regression implementation recov
 
 The script `script_AR_validation.m` simulates a stochastic autoregressive system:
 
-[
-X_{1,n} = 0.8X_{1,n-1} + 0.2e_{1,n}
-]
+$$X_{1,n} = 0.8X_{1,n-1} + 0.2e_{1,n}$$
 
-[
-X_{2,n} = 0.6X_{2,n-1} + r_{12}X_{1,n-1} + 0.2e_{2,n}
-]
+$$X_{2,n} = 0.6X_{2,n-1} + r_{12}X_{1,n-1} + 0.2e_{2,n}$$
 
-[
-Y_n = 0.5Y_{n-1} + cX_{1,n-1}X_{2,n-1}
+$$Y_n = 0.5Y_{n-1} + cX_{1,n-1}X_{2,n-1}
 
-* c_A X_{1,n-1} + c_A X_{2,n-1} + 0.2e_{3,n}
-  ]
+* c_A X_{1,n-1} + c_A X_{2,n-1} + 0.2e_{3,n}$$
 
 This simulation provides a controlled dynamical setting in which additive source effects, non-additive source interactions, and source dependence can be manipulated independently.
 
-The measures are computed by taking (Y_n) as target and (X_{1,n-1}), (X_{2,n-1}) as sources.
+The measures are computed by taking $$Y_n$$ as target and $$X_{1,n-1}$$, $$X_{2,n-1}$$ as sources.
 
 ## Example 4: climate case study
 
 The script `script_climate_case_study.m` applies the framework to climate indices related to the El Niño–Southern Oscillation (ENSO). The Southern Oscillation Index (SOI) is used as target, while different pairs of climate indices are used as sources.
 
-For each source pair and polynomial order (p \in {2,3,4}), the script computes:
+For each source pair and polynomial order $$p \in {2,3,4}$$, the script computes:
 
 * Spearman correlation between sources;
 * (\Delta);
