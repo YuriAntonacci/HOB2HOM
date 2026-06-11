@@ -62,15 +62,15 @@ Computes interaction predictability and additive interaction predictability:
 
 Inputs:
 
-* `x1`: first source variable, (N \times 1)
-* `x2`: second source variable, (N \times 1)
-* `y`: target variable, (N \times 1)
+* `x1`: first source variable, 
+* `x2`: second source variable, 
+* `y`: target variable, 
 * `p`: maximum polynomial order
 
 Outputs:
 
-* `delta`: interaction predictability (\Delta)
-* `deltaA`: additive interaction predictability (\Delta_A)
+* `delta`: interaction predictability ($$\Delta $$)
+* `deltaA`: additive interaction predictability ($$\Delta_A$$)
 
 The function estimates residual variances from polynomial regression models including single-source, additive joint, and full joint predictors.
 
@@ -84,9 +84,9 @@ Ss = struct_syn(x1, x2, y, p, surr_sign, surr_p);
 
 Inputs:
 
-* `x1`: first source variable, (N \times 1)
-* `x2`: second source variable, (N \times 1)
-* `y`: target variable, (N \times 1)
+* `x1`: first source variable, 
+* `x2`: second source variable, 
+* `y`: target variable, 
 * `p`: maximum polynomial order
 * `surr_sign`: flag for surrogate testing of structural synergy
 * `surr_p`: flag for surrogate testing of the contribution of order-(p) terms
