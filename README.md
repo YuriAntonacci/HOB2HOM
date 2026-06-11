@@ -150,7 +150,7 @@ The measures are computed by taking $$Y_n$$ as target and $$X_{1,n-1}$$, $$X_{2,
 
 The script `Climate_Dynamics.m` applies the framework to climate indices related to the El Niño–Southern Oscillation (ENSO). The Southern Oscillation Index (SOI) is used as target, while different pairs of climate indices are used as sources.
 
-For each source pair and polynomial order $$p \in {2,3,4}$$, the script computes:
+For each source pair and polynomial order $$p \in \{2,3,4\}$$, the script computes:
 
 * Spearman correlation between sources;
 * $$\Delta$$;
