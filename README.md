@@ -21,7 +21,7 @@ $$
 S_s = R_A^* - R^*
 $$
 
-where (R_A^*) is the residual variance of the best additive model and (R^*) is the residual variance of the full model. A positive value of (S_s) indicates that the target contains a non-additive predictive component that cannot be reproduced by separate source-specific effects.
+where $$R_A^* $$ is the residual variance of the best additive model and $$R^* $$ is the residual variance of the full model. A positive value of (S_s) indicates that the target contains a non-additive predictive component that cannot be reproduced by separate source-specific effects.
 
 ## Repository structure
 
