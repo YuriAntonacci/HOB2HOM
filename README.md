@@ -140,9 +140,7 @@ $$X_{1,n} = 0.8X_{1,n-1} + 0.2e_{1,n}$$
 
 $$X_{2,n} = 0.6X_{2,n-1} + r_{12}X_{1,n-1} + 0.2e_{2,n}$$
 
-$$Y_n = 0.5Y_{n-1} + cX_{1,n-1}X_{2,n-1}
-
-* c_A X_{1,n-1} + c_A X_{2,n-1} + 0.2e_{3,n}$$
+$$Y_n = 0.5Y_{n-1} + cX_{1,n-1}X_{2,n-1} * c_A X_{1,n-1} + c_A X_{2,n-1} + 0.2e_{3,n}$$
 
 This simulation provides a controlled dynamical setting in which additive source effects, non-additive source interactions, and source dependence can be manipulated independently.
 
