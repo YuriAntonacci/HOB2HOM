@@ -93,7 +93,7 @@ Inputs:
 
 Outputs:
 
-* `Ss`: structural synergy (S_s)
+* `Ss`: structural synergy $$S_s$$
 
 The function compares the residual variance of the additive model with that of the full model including polynomial interaction terms.
 
