@@ -36,10 +36,10 @@ HOB2HOM/
 │   
 │
 ├── scripts/
-│   ├── script_theoretical_trends.m
-│   ├── script_theoretical_estimation.m
-│   ├── script_AR_validation.m
-│   └── script_climate_case_study.m
+│   ├── Theoretical_Examples.m
+│   ├── Simulation1.m
+│   ├── Simulation_NAR_system.m
+│   └── Climate_Dynamics.m
 │
 ├── data/
 │   └── climate_data.mat
@@ -99,7 +99,7 @@ The function compares the residual variance of the additive model with that of t
 
 ## Example 1: theoretical trends
 
-The script `script_theoretical_trends.m` reproduces the theoretical trends of $$\Delta$$, $$\Delta_A$$, and $$S_s$$ for:
+The script `Theoretical_Examples.m` reproduces the theoretical trends of $$\Delta$$, $$\Delta_A$$, and $$S_s$$ for:
 
 1. a linear Gaussian system,
 
@@ -113,7 +113,7 @@ In the linear Gaussian system, $$ \Delta $$ may be positive or negative dependin
 
 ## Example 2: finite-sample estimation
 
-The script `script_theoretical_estimation.m` generates finite samples from the theoretical models and compares estimated values with analytical expressions.
+The script `Simulation1.m` generates finite samples from the theoretical models and compares estimated values with analytical expressions.
 
 Example output includes:
 
@@ -134,7 +134,7 @@ This allows one to verify whether the polynomial-regression implementation recov
 
 ## Example 3: stochastic autoregressive validation
 
-The script `script_AR_validation.m` simulates a stochastic autoregressive system:
+The script `Simulation_NAR_system.m` simulates a stochastic autoregressive system:
 
 $$X_{1,n} = 0.8X_{1,n-1} + 0.2e_{1,n}$$
 
@@ -148,15 +148,15 @@ The measures are computed by taking $$Y_n$$ as target and $$X_{1,n-1}$$, $$X_{2,
 
 ## Example 4: climate case study
 
-The script `script_climate_case_study.m` applies the framework to climate indices related to the El Niño–Southern Oscillation (ENSO). The Southern Oscillation Index (SOI) is used as target, while different pairs of climate indices are used as sources.
+The script `Climate_Dynamics.m` applies the framework to climate indices related to the El Niño–Southern Oscillation (ENSO). The Southern Oscillation Index (SOI) is used as target, while different pairs of climate indices are used as sources.
 
 For each source pair and polynomial order $$p \in {2,3,4}$$, the script computes:
 
 * Spearman correlation between sources;
-* (\Delta);
-* (\Delta_A);
-* (S_s);
-* surrogate-based significance of (S_s);
+* $$\Delta$$;
+* $$\Delta_A$$;
+* $$S_s$$;
+* surrogate-based significance of $$S_s$$;
 * surrogate-based significance of the contribution of order-(p) terms.
 
 
@@ -172,9 +172,6 @@ If you use this code, please cite:
 }
 ```
 
-## License
-
-Please add the appropriate license for the repository. Suggested options include the MIT License for open research code, or another license compatible with the intended use of the software and data.
 
 ## Contact
 
