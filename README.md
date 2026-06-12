@@ -2,7 +2,7 @@
 
 This repository contains MATLAB codes implementing the predictability-based framework introduced in the paper:
 
-**From Statistical to Structural Synergy: A Predictability Framework for Disentangling High-Order Behaviours and Mechanisms**
+**From Statistical to Structural Synergy: A Predictability Framework to Quantify the Effects due to High-Order Mechanisms**
 
 The framework is designed to investigate whether high-order behaviours (HOBs), observed as synergistic or redundant predictive patterns among variables, can be explained by additive source effects or instead require non-additive source-target interactions, interpreted as high-order mechanisms (HOMs) in controlled settings.
 
