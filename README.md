@@ -164,7 +164,7 @@ If you use this code, please cite:
 
 ```bibtex
 @article{Antonacci2026StructuralSynergy,
-  title   = {From Statistical to Structural Synergy: A Predictability Framework for Disentangling High-Order Behaviours and Mechanisms},
+  title   = {From Statistical to Structural Synergy: A Predictability Framework to Quantify the Effects due to High-Order Mechanisms},
   author  = {Antonacci, Yuri and Bar{\`a}, Chiara and Sparacino, Laura and Marinazzo, Daniele and Faes, Luca and Stramaglia, Sebastiano},
   journal = {Chaos, Solitons and Fractals},
   year    = {2026},
