@@ -97,7 +97,7 @@ Ss_est_lin = delta_lin - deltaA_lin;
 Ss_surr_lin = zeros(Nsurr,1);
 
 for j = 1:Nsurr
-    Ss_surr_lin(j) = struct_syn_v2(X1, X2, Y_lin, p, 1);
+    Ss_surr_lin(j) = struct_syn(X1, X2, Y_lin, p, 0);
 end
 
 % Empirical upper-tail p-value with +1 correction
