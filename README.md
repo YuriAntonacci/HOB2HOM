@@ -172,7 +172,6 @@ If you use this code, please cite:
 }
 ```
 
-
 ## Contact
 
 For questions, please contact: yuri.antonacci@unipa.it
