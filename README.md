@@ -25,30 +25,21 @@ where $$R_A^* $$ is the residual variance of the best additive model and $$R^* $
 
 ## Repository structure
 
-A typical structure of the repository is:
-
 ```text
 HOB2HOM/
-│
 ├── functions/
 │   ├── int_pred.m
-│   ├── struct_syn.m
-│   
-│
+│   ├── redwhiteblue.m
+│   └── struct_syn.m
 ├── scripts/
-│   ├── Theoretical_Examples.m
+│   ├── Climate_Dynamics.m
 │   ├── Simulation1.m
 │   ├── Simulation_NAR_system.m
-│   └── Climate_Dynamics.m
-│
+│   └── Theoretical_Examples.m
 ├── data/
 │   └── climate_data.mat
-│
-│
 └── README.md
 ```
-
-The exact file names can be adapted depending on how the repository is organized.
 
 ## Core functions
 
