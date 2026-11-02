@@ -100,7 +100,7 @@ $$ Y = aX_1 + bX_2 + U $$
 
 $$ Y = cX_1X_2 + U $$
 
-In the linear Gaussian system, $$ \Delta $$ may be positive or negative depending on source correlation, but $$S_s = 0$$, because the optimal predictor is additive. In the non-linear multiplicative system, $$S_s > 0$$ for $$c \neq 0$$ and $$|r_{12}| < 1$$, indicating a genuine non-additive predictive component.
+In the linear Gaussian system, $$\Delta$$ may be positive or negative depending on source correlation, but $$S_s = 0$$, because the optimal predictor is additive. In the non-linear multiplicative system, $$S_s > 0$$ for $$c \neq 0$$ and $$|r_{12}| < 1$$, indicating a genuine non-additive predictive component.
 
 ## Example 2: finite-sample estimation
 
