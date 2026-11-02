@@ -39,7 +39,7 @@ rng(1);            % reproducibility
 %
 % X1_n = 0.8 X1_{n-1} + 0.2 e1_n
 % X2_n = 0.6 X2_{n-1} + r12 X1_{n-1} + 0.2 e2_n
-% Y_n  = 0.5 Y_{n-1} + c X1_{n-1} X2_{n-1}
+% Y_n  = c X1_{n-1} X2_{n-1}
 %        + cA X1_{n-1} + cA X2_{n-1} + 0.2 e3_n
 %
 % The target depends on the lagged source states, so the analysis below
@@ -61,7 +61,7 @@ for t = 2:N
 
     X2(t) = 0.6 * X2(t-1) + r12 * X1(t-1) + 0.2 * randn;
 
-    Y(t) = 0.5 * Y(t-1) ...
+    Y(t) = 
          + c  * (X1(t-1) * X2(t-1)) ...
          + cA * X1(t-1) ...
          + cA * X2(t-1) ...
